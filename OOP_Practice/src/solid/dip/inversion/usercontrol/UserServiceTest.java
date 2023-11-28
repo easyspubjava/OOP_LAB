@@ -1,4 +1,4 @@
-package solid.di.usercontrol;
+package solid.dip.inversion.usercontrol;
 
 public class UserServiceTest {
     public static boolean doTest(){

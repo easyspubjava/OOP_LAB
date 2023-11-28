@@ -14,7 +14,7 @@ public class Alert {
     public void check(String api, long requestCount, long errorCount, long duration){
         long tps = requestCount/errorCount;
         if(tps > rule.getMatchedRule(api).getMaxTps()){
-            notification.notify(NotificationEmergencyLevel.URGENCY, "...");
+            notification.notify(NotificationEmergencyLevel.EROOR, "...");
         }
         if(errorCount > rule.getMatchedRule(api).getMaxErrorCount()){
             notification.notify(NotificationEmergencyLevel.SEVERE, "...");

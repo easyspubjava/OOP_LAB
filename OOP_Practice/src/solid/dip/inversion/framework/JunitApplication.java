@@ -1,4 +1,4 @@
-package solid.di.framework;
+package solid.dip.inversion.framework;
 
 import java.util.ArrayList;
 import java.util.List;
