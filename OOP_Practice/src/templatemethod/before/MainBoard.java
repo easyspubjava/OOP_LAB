@@ -1,4 +1,4 @@
-package templatemethod;
+package templatemethod.before;
 
 public class MainBoard {
     public static void main(String[] args) {

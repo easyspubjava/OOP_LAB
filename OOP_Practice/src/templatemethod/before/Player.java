@@ -1,4 +1,4 @@
-package templatemethod;
+package templatemethod.before;
 
 public class Player {
     public static final int BEGINNER_LEVEL = 1;
