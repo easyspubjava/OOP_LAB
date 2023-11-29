@@ -1,15 +1,22 @@
 package solid.isp;
 
-public interface UserService {
-    boolean register(String cellphone, String password);
-    boolean login(String cellphone, String password);
-    UserInfo getUserInfoById(long id);
-    UserInfo getUserInfoByCellphone(String cellphone);
+public interface RestrictedUserService {
 
+    boolean deleteUserInfoByID(long id);
+    boolean deleteUserInfoByCellphone(String cellphone);
 }
 
-class UserServiceImpl implements UserService{
+class AdminUserService implements UserService, RestrictedUserService{
 
+    @Override
+    public boolean deleteUserInfoByID(long id) {
+        return false;
+    }
+
+    @Override
+    public boolean deleteUserInfoByCellphone(String cellphone) {
+        return false;
+    }
 
     @Override
     public boolean register(String cellphone, String password) {
