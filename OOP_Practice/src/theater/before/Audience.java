@@ -11,7 +11,7 @@ public class Audience {
         return bag;
     }
 
-    public Long buy(Ticket ticket) {
+  /*  public Long buy(Ticket ticket) {
 
         if (bag.hasInvitation()){
             bag.setTicket(ticket);
@@ -23,5 +23,5 @@ public class Audience {
             bag.setTicket(ticket);
             return fee;
         }
-    }
+    }*/
 }

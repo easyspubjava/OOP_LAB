@@ -22,7 +22,7 @@ public class CarFactory {
             returnCar = new Grandeur(owner);
         }
         else if(type ==  CarName.GENESIS.name){
-            returnCar = new Grandeur(owner);
+            returnCar = new Genesis(owner);
         }
         registerCar(returnCar, owner);
         return returnCar;

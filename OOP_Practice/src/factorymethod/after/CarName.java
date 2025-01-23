@@ -6,6 +6,7 @@ public enum CarName {
     GENESIS("Genesis");
 
     public String name;
+
     CarName(String name){
         this.name = name;
     }
